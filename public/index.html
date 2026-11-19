@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Book Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Online Book Management System</h1>
+
+    <div class="container">
+
+        <h2>Add / Update Book</h2>
+
+        <input type="hidden" id="bookId">
+
+        <input type="text" id="title"
+            placeholder="Enter Book Title">
+
+        <input type="text" id="author"
+            placeholder="Enter Author Name">
+
+        <input type="number" id="price"
+            placeholder="Enter Price">
+
+        <button onclick="saveBook()">Save Book</button>
+
+        <button onclick="clearForm()">Clear</button>
+
+        <h2>Book List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="bookList"></tbody>
+        </table>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
